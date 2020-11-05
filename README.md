@@ -12,11 +12,11 @@ Being a younger boy in today’s day-of-age, Jonathan obviously knows how to use
 
 ###### Charlie, a college sophomore
 ---
-
 Charlie, 20, is a sophomore college student who has been playing Minecraft since early middle school. An avid user of mods and modpacks, Charlie has had a lot of experience with mods that significantly alter the gameplay of Minecraft, from mods that introduce technology trees and automation to ones that add new mobs and bosses. At this point, Charlie has become quite skilled at installing and using mods by browsing forums and reading guides. Recently, Charlie has been missing the feel of vanilla Minecraft, but has been somewhat "spoiled" by the features that a lot of popular mods offer, and is finding it hard to not get irritated when things in the un-modded game get tedious. Charlie is intrigued by (Insert Mod Name Here) as it fixes a lot of the tedium of vanilla Minecraft without significantly altering the simple feel of the game, as well as not requiring a tremendous amount of effort to learn to use. 
 
-###### 3RD PERSONA
+###### Michal, a high school student and games enthusiast
 ---
+Michal is a high school student who loves playing games that involves puzzles and some sort of complex problem solving. He likes to play games that involve creative thinking and circuit designing. Minecraft is a game that both involves those two aspects and he already is a consistent player of the game. He knows how to design many Redstone circuits in the game already and is involved in Minecraft mods and the community in general. As Minecraft gets bigger, the number of items and possibilities increase with every update. He would like to use a mod that adds simple quality of life improvements and blocks that make it easier to manage the ever-expanding universe of possibilities in the game. Blocks that help with his designing and sorting his storage as well as few game additions blocks that expand on block usages. The mod is also a lightweight one that is concerned with quality of life changes to the mod to make the game easier to manage mainly in vanilla Minecraft.
 
 ###### 4TH PERSONA
 ---
