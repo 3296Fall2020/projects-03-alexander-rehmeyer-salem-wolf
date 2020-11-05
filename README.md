@@ -1,4 +1,4 @@
-### Minecraft Forge Mod - Final Project
+### Minecraft Forge Mod (TempleUtilities / TUtilities / TUtils) - Final Project
 
 #### Project Abstract
 The purpose of this project is the creation of a mod for the game Minecraft using Minecraft Forge, an open-source project that allows Java developers to view and modify the game’s code as well as load mods into a running instance of the game. I intend for this project to include the addition of relatively simple quality-of-life improvements for Minecraft’s basic gameplay loop. I plan to add new items to the game as well as additional functionalities for existing items. Developers will be programming mostly in Java. I recommend Eclipse for Java as the IDE for this project, but any development environment that can import Gradle projects will work just fine
@@ -28,7 +28,7 @@ The mod we are proposing would make the following additions to the game:
 * Run “fg_runs” Gradle Task in the imported Gradle project
 * File > Import > Run/Debug > Launch Configurations
 * Import RunClient
-* Change MC Version Environment Variable to 1.12 in Run Configuration
+* Change MC Version Environment Variable to 1.16 in Run Configuration
 * Run using RunClient configuration, this will launch the Minecraft Client
 
 ### Link to Presentation Slide
@@ -37,7 +37,7 @@ The mod we are proposing would make the following additions to the game:
 
 ##### Product Vision :
 ---
-For Minecraft players of any level of experience who are looking for simple quality of life improvements to the game. (Modname) is a lightweight, simple mod that, unlike other popular minecraft mods, is focused more on enhancing the vanilla Minecraft experience than extending it
+For Minecraft players of any level of experience who are looking for simple quality of life improvements to the game. TUtilities is a lightweight, simple mod that, unlike other popular minecraft mods, is focused more on enhancing the vanilla Minecraft experience than extending it
 
 ##### Personas :
 ###### Jonathan, a young student
@@ -47,7 +47,7 @@ Being a younger boy in today’s day-of-age, Jonathan obviously knows how to use
 
 ###### Charlie, a college sophomore
 ---
-Charlie, 20, is a sophomore college student who has been playing Minecraft since early middle school. An avid user of mods and modpacks, Charlie has had a lot of experience with mods that significantly alter the gameplay of Minecraft, from mods that introduce technology trees and automation to ones that add new mobs and bosses. At this point, Charlie has become quite skilled at installing and using mods by browsing forums and reading guides. Recently, Charlie has been missing the feel of vanilla Minecraft, but has been somewhat "spoiled" by the features that a lot of popular mods offer, and is finding it hard to not get irritated when things in the un-modded game get tedious. Charlie is intrigued by (Insert Mod Name Here) as it fixes a lot of the tedium of vanilla Minecraft without significantly altering the simple feel of the game, as well as not requiring a tremendous amount of effort to learn to use. 
+Charlie, 20, is a sophomore college student who has been playing Minecraft since early middle school. An avid user of mods and modpacks, Charlie has had a lot of experience with mods that significantly alter the gameplay of Minecraft, from mods that introduce technology trees and automation to ones that add new mobs and bosses. At this point, Charlie has become quite skilled at installing and using mods by browsing forums and reading guides. Recently, Charlie has been missing the feel of vanilla Minecraft, but has been somewhat "spoiled" by the features that a lot of popular mods offer, and is finding it hard to not get irritated when things in the un-modded game get tedious. Charlie is intrigued by TUtils as it fixes a lot of the tedium of vanilla Minecraft without significantly altering the simple feel of the game, as well as not requiring a tremendous amount of effort to learn to use. 
 
 ###### Michal, a high school student and games enthusiast
 ---
