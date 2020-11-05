@@ -1,4 +1,9 @@
 ### Minecraft Forge Mod - Final Project
+
+##### Product Vision :
+---
+For Minecraft players of any level of experience who are looking for simple quality of life improvements to the game. (Modname) is a lightweight, simple mod that, unlike other popular minecraft mods, is focused more on enhancing the vanilla Minecraft experience than extending it
+
 ##### Personas :
 ###### Jonathan, a young student
 ---
