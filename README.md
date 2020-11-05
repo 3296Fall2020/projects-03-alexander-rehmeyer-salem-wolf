@@ -1,5 +1,40 @@
 ### Minecraft Forge Mod - Final Project
 
+#### Project Abstract
+The purpose of this project is the creation of a mod for the game Minecraft using Minecraft Forge, an open-source project that allows Java developers to view and modify the game’s code as well as load mods into a running instance of the game. I intend for this project to include the addition of relatively simple quality-of-life improvements for Minecraft’s basic gameplay loop. I plan to add new items to the game as well as additional functionalities for existing items. Developers will be programming mostly in Java. I recommend Eclipse for Java as the IDE for this project, but any development environment that can import Gradle projects will work just fine
+
+#### Project Relevance
+The objectives of this project coincide perfectly with the educational objectives of this course. The developers will be required to study and modify code written in an object-oriented style, work with multiple GUI, and test and debug the mod to ensure that it does not cause any game-breaking conflicts in the game’s code.
+
+#### Conceptual Design
+
+The mod we are proposing would make the following additions to the game:
+* Additional tools that combine the functionalities of existing tools to allow for easier resource collection and navigation of the game-world
+* New crafting recipes to allow players easily obtain items that are usually difficult to get
+* Add new crafting stations that allow for more efficient resource processing
+* New randomly generated structures
+
+### Project Background:
+[Minecraft Forge Documentation](https://mcforge.readthedocs.io/en/1.14.x/concepts/sides/)
+[Minecraft Forge Github](https://github.com/MinecraftForge/MinecraftForge/tree/1.12.x)
+[MCForge Download](https://files.minecraftforge.net/maven/net/minecraftforge/forge/index_1.12.2.html)
+[My Repo](https://github.com/CollinRehmeyer-templeU/myMod)
+
+### Building the Project
+* Requires JDK 8, Gradle, and a Java IDE (I used Eclipse)
+* Download MC Forge 1.16.3 MDK (Mod Development Kit) and extract zip, import to IDE as a Gradle Project
+
+### Running the Project
+* Run “fg_runs” Gradle Task in the imported Gradle project
+* File > Import > Run/Debug > Launch Configurations
+* Import RunClient
+* Change MC Version Environment Variable to 1.12 in Run Configuration
+* Run using RunClient configuration, this will launch the Minecraft Client
+
+### Link to Presentation Slide
+[My Presentation Slide](https://github.com/CollinRehmeyer-templeU/myMod/blob/master/Slide.pdf)
+
+
 ##### Product Vision :
 ---
 For Minecraft players of any level of experience who are looking for simple quality of life improvements to the game. (Modname) is a lightweight, simple mod that, unlike other popular minecraft mods, is focused more on enhancing the vanilla Minecraft experience than extending it
