@@ -53,9 +53,9 @@ Charlie, 20, is a sophomore college student who has been playing Minecraft since
 ---
 Michal is a high school student who loves playing games that involves puzzles and some sort of complex problem solving. He likes to play games that involve creative thinking and circuit designing. Minecraft is a game that both involves those two aspects and he already is a consistent player of the game. He knows how to design many Redstone circuits in the game already and is involved in Minecraft mods and the community in general. As Minecraft gets bigger, the number of items and possibilities increase with every update. He would like to use a mod that adds simple quality of life improvements and blocks that make it easier to manage the ever-expanding universe of possibilities in the game. Blocks that help with his designing and sorting his storage as well as few game additions blocks that expand on block usages. The mod is also a lightweight one that is concerned with quality of life changes to the mod to make the game easier to manage mainly in vanilla Minecraft.
 
-###### 4TH PERSONA
+###### Louis, a college junior
 ---
-
+Louis, a junior in college, used to play Minecraft as a child, but as he grew older he played it less and less. As a child he had a lot of experience with the game and came to know it very intimately. He always enjoyed working with the redstone aspect of the game and grew quite adept with it, often making intricate projects. However, as he grew older he played the game less and less until he stopped playing it entirely. Recently, while watching one of his favorite video game streamers, he became interested in the game again. When he returned to it, he noticed how it has changed greatly since he last played it, as well as the great availability of mods for the game. He found several aspects of the interface to be troublesome and could easily be fixed; he also believes the biomes and structures to be rather limited. He is interested in a mod that could address both of these things, improving the interface as well as providing a greater variety of structures.
 
 
 ##### FORGE README
