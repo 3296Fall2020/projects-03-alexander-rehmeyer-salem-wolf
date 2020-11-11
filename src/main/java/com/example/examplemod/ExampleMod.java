@@ -2,14 +2,13 @@ package com.example.examplemod;
 
 import com.example.lists.BlockList;
 import com.example.lists.ItemList;
+import com.example.lists.ToolMaterialList;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
-import net.minecraft.item.BlockItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
+import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
@@ -100,6 +99,11 @@ public class ExampleMod
             event.getRegistry().registerAll
             (
                 ItemList.uranium_ingot = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_ingot")),
+                ItemList.uranium_pickaxe = new PickaxeItem(ToolMaterialList.uranium, -2, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_pickaxe")),
+                ItemList.uranium_sword = new SwordItem(ToolMaterialList.uranium, 0, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_sword")),
+                ItemList.uranium_axe = new AxeItem(ToolMaterialList.uranium, -1.0f, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_axe")),
+                ItemList.uranium_shovel = new ShovelItem(ToolMaterialList.uranium, -3.0f, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_shovel")),
+                ItemList.uranium_hoe = new HoeItem(ToolMaterialList.uranium, 1, 6.0f, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_hoe")),
 
                 ItemList.uranium_block = new BlockItem(BlockList.uranium_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.uranium_block.getRegistryName())
             );
