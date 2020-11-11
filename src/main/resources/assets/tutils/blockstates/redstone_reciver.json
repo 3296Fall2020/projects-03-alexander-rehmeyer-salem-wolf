@@ -1,0 +1,6 @@
+{
+  "variants":
+  {
+    "": { "model":  "tutils:block/redstone_reciver" }
+  }
+}
