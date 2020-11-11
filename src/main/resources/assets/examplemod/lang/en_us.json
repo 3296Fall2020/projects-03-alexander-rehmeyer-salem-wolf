@@ -1,5 +1,10 @@
 {
   "item.examplemod.uranium_ingot": "Uranium Ingot",
+  "item.examplemod.uranium_pickaxe": "Uranium Pickaxe",
+  "item.examplemod.uranium_sword": "Uranium Sword",
+  "item.examplemod.uranium_axe": "Uranium Axe",
+  "item.examplemod.uranium_shovel": "Uranium Shovel",
+  "item.examplemod.uranium_hoe": "Uranium Hoe",
 
   "block.examplemod.uranium_block": "Uranium Block"
 }
