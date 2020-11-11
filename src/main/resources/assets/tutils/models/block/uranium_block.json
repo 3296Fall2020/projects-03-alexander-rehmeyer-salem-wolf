@@ -2,7 +2,7 @@
     "parent": "block/cube_all",
     "textures":
     {
-        "all": "examplemod:block/uranium_block"
+        "all": "tutils:block/uranium_block"
     }
 }
 

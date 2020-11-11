@@ -2,6 +2,6 @@
     "parent": "item/generated",
     "textures":
     {
-        "layer0": "examplemod:item/uranium_ingot"
+        "layer0": "tutils:item/uranium_ingot"
     }
 }
