@@ -1,7 +1,16 @@
 package com.example.examplemod;
 
+import com.example.lists.BlockList;
+import com.example.lists.ItemList;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.SoundType;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
+import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.RegistryEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -51,6 +60,8 @@ public class ExampleMod
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
     }
 
+    /* ----------------------------------------------------------------------------------------------------------------------------- */
+
     private void enqueueIMC(final InterModEnqueueEvent event)
     {
         // some example code to dispatch IMC to another mod
@@ -75,10 +86,43 @@ public class ExampleMod
     // Event bus for receiving Registry Events)
     @Mod.EventBusSubscriber(bus=Mod.EventBusSubscriber.Bus.MOD)
     public static class RegistryEvents {
+
         @SubscribeEvent
         public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
             // register a new block here
             LOGGER.info("HELLO from Register Block");
+        }
+
+        // Registers all custom items added to the game at startup
+        @SubscribeEvent
+        public static void registerItems(final RegistryEvent.Register<Item> event)
+        {
+            event.getRegistry().registerAll
+            (
+                ItemList.uranium_ingot = new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(location("uranium_ingot")),
+
+                ItemList.uranium_block = new BlockItem(BlockList.uranium_block, new Item.Properties().group(ItemGroup.MISC)).setRegistryName(BlockList.uranium_block.getRegistryName())
+            );
+
+            LOGGER.info("Items registered.");
+        }
+
+        // Registers all custom blocks added to the game at startup
+        @SubscribeEvent
+        public static void registerBlocks(final RegistryEvent.Register<Block> event)
+        {
+            event.getRegistry().registerAll
+                    (
+                        BlockList.uranium_block = new Block(Block.Properties.create(Material.IRON).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.METAL)).setRegistryName(location("uranium_block"))
+                    );
+
+            LOGGER.info("Blocks registered.");
+        }
+
+        // Finds the location of a resource within Minecraft
+        private static ResourceLocation location(String name)
+        {
+            return new ResourceLocation("examplemod", name);
         }
     }
 }
