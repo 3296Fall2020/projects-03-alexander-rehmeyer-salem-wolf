@@ -18,11 +18,17 @@ public enum ModMaterials implements IItemTier
     // Constructor for a new custom material
     private ModMaterials(float attackDamage, float efficiency, int durability, int harvestLevel, int enchantability, Item repairMaterial)
     {
+        // tells how much damage a tool made from this material will generally apply
         this.attackDamage = attackDamage;
+        // tells how fast a tool made from this material will mine/break a block
         this.efficiency = efficiency;
+        // tells how many times a tool made from this material can be used
         this .durability = durability;
+        // tells what a tool made from this material is able to mine/break
         this.harvestLevel = harvestLevel;
+        // tells at what value tools made from this material will get better enchantments at lower levels
         this.enchantability = enchantability;
+        // tells what material a tool made from this material can be repaired with
         this.repairMaterial = repairMaterial;
     }
 
