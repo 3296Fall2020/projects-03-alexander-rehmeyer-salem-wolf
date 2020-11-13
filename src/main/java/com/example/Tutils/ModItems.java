@@ -22,5 +22,6 @@ public class ModItems {
 
     // Block items
     public static final RegistryObject<Item> uranium_block = ITEMS.register("uranium_block", () -> new BlockItem(ModBlocks.uranium_block.get(), new Item.Properties().group(Tutils.TAB)));
+    public static final RegistryObject<Item> uranium_ore = ITEMS.register("uranium_ore", () -> new BlockItem(ModBlocks.uranium_ore.get(), new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<Item> RedstoneReciver = ITEMS.register("redstone_reciver", () -> new BlockItem(ModBlocks.RedstoneReciver.get(), new Item.Properties().group(Tutils.TAB)));
 }
