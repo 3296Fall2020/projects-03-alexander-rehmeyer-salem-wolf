@@ -26,7 +26,8 @@ public class Tutils
 
         ModBlocks.BLOCKS.register(FMLJavaModLoadingContext.get().getModEventBus());
         ModItems.ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
-        LOGGER.info("Blocks and items registered");
+        ModBiomes.BIOMES.register(FMLJavaModLoadingContext.get().getModEventBus());
+        LOGGER.info("Blocks, items, and biomes registered");
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -55,4 +56,5 @@ public class Tutils
             return new ItemStack(ModItems.uranium_ingot.get());
         }
     };
+
 }
