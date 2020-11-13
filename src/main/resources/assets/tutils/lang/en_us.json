@@ -5,7 +5,9 @@
     "item.tutils.uranium_axe": "Uranium Axe",
     "item.tutils.uranium_shovel": "Uranium Shovel",
     "item.tutils.uranium_hoe": "Uranium Hoe",
-
     "block.tutils.uranium_block": "Uranium Block",
     "block.tutils.redstone_reciver": "Redstone Reciver"
+  "item.tutils.uranium_ingot": "Uranium Ingot",
+  "block.tutils.uranium_block": "Uranium Block",
+  "block.tutils.redstone_reciver": "Redstone Reciver"
 }

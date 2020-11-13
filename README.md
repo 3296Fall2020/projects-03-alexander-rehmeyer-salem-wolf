@@ -1,4 +1,4 @@
-### Minecraft Forge Mod - Final Project
+### Minecraft Forge Mod (TempleUtilities / TUtilities / TUtils) - Final Project
 
 #### Project Abstract
 The purpose of this project is the creation of a mod for the game Minecraft using Minecraft Forge, an open-source project that allows Java developers to view and modify the game’s code as well as load mods into a running instance of the game. I intend for this project to include the addition of relatively simple quality-of-life improvements for Minecraft’s basic gameplay loop. I plan to add new items to the game as well as additional functionalities for existing items. Developers will be programming mostly in Java. I recommend Eclipse for Java as the IDE for this project, but any development environment that can import Gradle projects will work just fine
@@ -28,7 +28,7 @@ The mod we are proposing would make the following additions to the game:
 * Run “fg_runs” Gradle Task in the imported Gradle project
 * File > Import > Run/Debug > Launch Configurations
 * Import RunClient
-* Change MC Version Environment Variable to 1.12 in Run Configuration
+* Change MC Version Environment Variable to 1.16 in Run Configuration
 * Run using RunClient configuration, this will launch the Minecraft Client
 
 ### Link to Presentation Slide
@@ -37,7 +37,7 @@ The mod we are proposing would make the following additions to the game:
 
 ##### Product Vision :
 ---
-For Minecraft players of any level of experience who are looking for simple quality of life improvements to the game. (Modname) is a lightweight, simple mod that, unlike other popular minecraft mods, is focused more on enhancing the vanilla Minecraft experience than extending it
+For Minecraft players of any level of experience who are looking for simple quality of life improvements to the game. TUtilities is a lightweight, simple mod that, unlike other popular minecraft mods, is focused more on enhancing the vanilla Minecraft experience than extending it
 
 ##### Personas :
 ###### Jonathan, a young student
@@ -47,15 +47,15 @@ Being a younger boy in today’s day-of-age, Jonathan obviously knows how to use
 
 ###### Charlie, a college sophomore
 ---
-Charlie, 20, is a sophomore college student who has been playing Minecraft since early middle school. An avid user of mods and modpacks, Charlie has had a lot of experience with mods that significantly alter the gameplay of Minecraft, from mods that introduce technology trees and automation to ones that add new mobs and bosses. At this point, Charlie has become quite skilled at installing and using mods by browsing forums and reading guides. Recently, Charlie has been missing the feel of vanilla Minecraft, but has been somewhat "spoiled" by the features that a lot of popular mods offer, and is finding it hard to not get irritated when things in the un-modded game get tedious. Charlie is intrigued by (Insert Mod Name Here) as it fixes a lot of the tedium of vanilla Minecraft without significantly altering the simple feel of the game, as well as not requiring a tremendous amount of effort to learn to use. 
+Charlie, 20, is a sophomore college student who has been playing Minecraft since early middle school. An avid user of mods and modpacks, Charlie has had a lot of experience with mods that significantly alter the gameplay of Minecraft, from mods that introduce technology trees and automation to ones that add new mobs and bosses. At this point, Charlie has become quite skilled at installing and using mods by browsing forums and reading guides. Recently, Charlie has been missing the feel of vanilla Minecraft, but has been somewhat "spoiled" by the features that a lot of popular mods offer, and is finding it hard to not get irritated when things in the un-modded game get tedious. Charlie is intrigued by TUtils as it fixes a lot of the tedium of vanilla Minecraft without significantly altering the simple feel of the game, as well as not requiring a tremendous amount of effort to learn to use. 
 
 ###### Michal, a high school student and games enthusiast
 ---
 Michal is a high school student who loves playing games that involves puzzles and some sort of complex problem solving. He likes to play games that involve creative thinking and circuit designing. Minecraft is a game that both involves those two aspects and he already is a consistent player of the game. He knows how to design many Redstone circuits in the game already and is involved in Minecraft mods and the community in general. As Minecraft gets bigger, the number of items and possibilities increase with every update. He would like to use a mod that adds simple quality of life improvements and blocks that make it easier to manage the ever-expanding universe of possibilities in the game. Blocks that help with his designing and sorting his storage as well as few game additions blocks that expand on block usages. The mod is also a lightweight one that is concerned with quality of life changes to the mod to make the game easier to manage mainly in vanilla Minecraft.
 
-###### 4TH PERSONA
+###### Louis, a college junior
 ---
-
+Louis, a junior in college, used to play Minecraft as a child, but as he grew older he played it less and less. As a child he had a lot of experience with the game and came to know it very intimately. He always enjoyed working with the redstone aspect of the game and grew quite adept with it, often making intricate projects. However, as he grew older he played the game less and less until he stopped playing it entirely. Recently, while watching one of his favorite video game streamers, he became interested in the game again. When he returned to it, he noticed how it has changed greatly since he last played it, as well as the great availability of mods for the game. He found several aspects of the interface to be troublesome and could easily be fixed; he also believes the biomes and structures to be rather limited. He is interested in a mod that could address both of these things, improving the interface as well as providing a greater variety of structures.
 
 
 ##### FORGE README
