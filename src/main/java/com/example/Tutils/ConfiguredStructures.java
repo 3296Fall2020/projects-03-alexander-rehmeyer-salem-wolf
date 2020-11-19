@@ -18,7 +18,7 @@ public class ConfiguredStructures {
     
     public static void registerConfiguredStructures() {
         Registry<StructureFeature<?, ?>> registry = WorldGenRegistries.CONFIGURED_STRUCTURE_FEATURE;
-        Registry.register(registry, new ResourceLocation(Tutils.MODID, "configured_facility_1"), CONFIGURED_FACILITY_1);
+        Registry.register(registry, new ResourceLocation(Tutils.MOD_ID, "configured_facility_1"), CONFIGURED_FACILITY_1);
 
 
         FlatGenerationSettings.STRUCTURES.put(TUStructures.FACILITY_1, CONFIGURED_FACILITY_1);

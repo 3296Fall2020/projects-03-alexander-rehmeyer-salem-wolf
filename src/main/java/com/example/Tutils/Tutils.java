@@ -33,17 +33,17 @@ import java.util.Map;
 @Mod("tutils")
 public class Tutils
 {
-	public static final String MODID = "tutils";
 	
 	 // Directly reference a log4j logger.
     public static final Logger LOGGER = LogManager.getLogger();
+    public static final String MOD_ID = "tutils";
 
 
     public Tutils() {
         // For registering and other initialization stuff.
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addGenericListener(Structure.class, this::onRegisterStructures);
-
+        
 
         // For events that happen after initialization. This is probably going to be use a lot.
         IEventBus forgeBus = MinecraftForge.EVENT_BUS;
@@ -92,7 +92,7 @@ public class Tutils
      * Helper method to quickly register features, blocks, items, structures, biomes, anything that can be registered.
      */
     public static <T extends IForgeRegistryEntry<T>> T register(IForgeRegistry<T> registry, T entry, String registryKey) {
-        entry.setRegistryName(new ResourceLocation(Tutils.MODID, registryKey));
+        entry.setRegistryName(new ResourceLocation(Tutils.MOD_ID, registryKey));
         registry.register(entry);
         return entry;
     }

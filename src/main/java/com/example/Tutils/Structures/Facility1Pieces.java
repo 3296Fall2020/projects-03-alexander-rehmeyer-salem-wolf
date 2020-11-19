@@ -26,7 +26,7 @@ import java.util.Random;
 
 public class Facility1Pieces {
 	
-	public static final ResourceLocation FAC_1 = new ResourceLocation(Tutils.MODID, "facility_1");
+	public static final ResourceLocation FAC_1 = new ResourceLocation(Tutils.MOD_ID, "facility_1");
 	
 	
     public static void start(TemplateManager templateManager, BlockPos pos, Rotation rotation, List<StructurePiece> pieceList, Random random) {

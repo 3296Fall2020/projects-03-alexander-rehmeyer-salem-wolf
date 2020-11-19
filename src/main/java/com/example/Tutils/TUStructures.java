@@ -75,7 +75,7 @@ public class TUStructures {
      * your mod and don't change it. Called by registerFeatures.
      */
     public static void registerAllPieces() {
-        registerStructurePiece(F1, new ResourceLocation(Tutils.MODID, "facility_1"));
+        registerStructurePiece(F1, new ResourceLocation(Tutils.MOD_ID, "facility_1"));
     }
 
 
