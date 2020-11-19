@@ -33,14 +33,7 @@ public class Facility1Pieces {
         int x = pos.getX();
         int z = pos.getZ();
 
-        // This is how we factor in rotation for multi-piece structures.
-        //
-        // I would recommend using the OFFSET map above to have each piece at correct height relative of each other
-        // and keep the X and Z equal to 0. And then in rotations, have the centermost piece have a rotation
-        // of 0, 0, 0 and then have all other pieces' rotation be based off of the bottommost left corner of
-        // that piece (the corner that is smallest in X and Z).
-        //
-        // Lots of trial and error may be needed to get this right for your structure.
+        // factor in piece rotation
         BlockPos rotationOffSet = new BlockPos(0, 0, 0).rotate(rotation);
         BlockPos blockpos = rotationOffSet.add(x, pos.getY(), z);
         pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1, blockpos, rotation));
@@ -76,7 +69,8 @@ public class Facility1Pieces {
             PlacementSettings placementsettings = (new PlacementSettings()).setRotation(this.rotation).setMirror(Mirror.NONE);
             this.setup(template, this.templatePosition, placementsettings);
         }
-
+        
+        //For adding loot later
 		@Override
 		protected void handleDataMarker(String function, BlockPos pos, IServerWorld worldIn, Random rand,
 				MutableBoundingBox sbb) {

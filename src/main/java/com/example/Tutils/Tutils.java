@@ -59,14 +59,13 @@ public class Tutils
      */
     public void onRegisterStructures(final RegistryEvent.Register<Structure<?>> event) {
         // Registers the structures.
-        // If you don't do this, bad things might happen... very bad things... Spooky...
         TUStructures.registerStructures(event);
         ConfiguredStructures.registerConfiguredStructures();
 
         LOGGER.log(Level.DEBUG, "structures registered.");
     }
 
-    //add facility_1 to biome
+    //add facility_1 to all biomes
     public void biomeModification(final BiomeLoadingEvent event) {
     	
         event.getGeneration().getStructures().add(() -> ConfiguredStructures.CONFIGURED_FACILITY_1);

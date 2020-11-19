@@ -49,7 +49,7 @@ public class Facility1Structure extends Structure<NoFeatureConfig>
 
 
     /**
-     * Generation stage for when to generate the structure. there are 10 stages you can pick from!
+     * Generation stage for when to generate the structure.
      * This surface structure stage places the structure before plants and ores are generated.
      */
     @Override
@@ -72,7 +72,7 @@ public class Facility1Structure extends Structure<NoFeatureConfig>
         @Override
         public void func_230364_a_(DynamicRegistries dynamicRegistryManager, ChunkGenerator chunkGenerator, TemplateManager templateManagerIn, int chunkX, int chunkZ, Biome biomeIn, NoFeatureConfig config) {
 
-            // Turns the chunk coordinates into actual coordinates we can use. (Gets center of that chunk)
+            // Turns the chunk coordinates into actual coordinates (Gets center of chunk)
             int x = (chunkX << 4) + 7;
             int z = (chunkZ << 4) + 7;
             int surfaceY = chunkGenerator.getHeight(x, z, Heightmap.Type.WORLD_SURFACE_WG) - 1;
@@ -84,11 +84,11 @@ public class Facility1Structure extends Structure<NoFeatureConfig>
             Facility1Pieces.start(templateManagerIn, blockpos, Rotation.CLOCKWISE_180, this.components, this.rand);
   
 
-            // Sets the bounds of the structure once you are finished.
+            // Sets the bounds of the structure after creation
             this.recalculateStructureSize();
             
 
-            // I use to debug and quickly find out if the structure is spawning or not and where it is.
+            // Locate structure for debugging
             Tutils.LOGGER.log(Level.DEBUG, "Facility_1 at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
         }
 
