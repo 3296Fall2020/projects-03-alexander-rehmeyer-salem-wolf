@@ -1,5 +1,6 @@
 package com.example.Tutils;
 
+import com.example.Tutils.Items.RedstoneRemote;
 import net.minecraft.item.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -19,9 +20,12 @@ public class ModItems {
     public static final RegistryObject<AxeItem> uranium_axe = ITEMS.register("uranium_axe", () -> new AxeItem(ModMaterials.uranium, -1.0f, 6.0f, new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<ShovelItem> uranium_shovel = ITEMS.register("uranium_shovel", () -> new ShovelItem(ModMaterials.uranium, -3.0f, 6.0f, new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<HoeItem> uranium_hoe = ITEMS.register("uranium_hoe", () -> new HoeItem(ModMaterials.uranium, 1, 6.0f, new Item.Properties().group(Tutils.TAB)));
-
+    public static final RegistryObject<Item> redstone_remote = ITEMS.register("redstone_remote", RedstoneRemote::new);
+  
     // Block items
     public static final RegistryObject<Item> uranium_block = ITEMS.register("uranium_block", () -> new BlockItem(ModBlocks.uranium_block.get(), new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<Item> uranium_ore = ITEMS.register("uranium_ore", () -> new BlockItem(ModBlocks.uranium_ore.get(), new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<Item> RedstoneReciver = ITEMS.register("redstone_reciver", () -> new BlockItem(ModBlocks.RedstoneReciver.get(), new Item.Properties().group(Tutils.TAB)));
+    
 }
+
