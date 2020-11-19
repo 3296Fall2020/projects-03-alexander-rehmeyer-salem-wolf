@@ -1,6 +1,6 @@
 package com.example.Tutils.Items;
 
-import com.example.Tutils.Blocks.RedstoneReciver;
+import com.example.Tutils.Blocks.RedstoneReceiver;
 import com.example.Tutils.Tutils;
 import net.minecraft.client.Minecraft;
 import net.minecraft.entity.player.PlayerEntity;
@@ -37,7 +37,7 @@ public class RedstoneRemote extends Item {
                 double x = lookingAt.getHitVec().getX();
                 double y = lookingAt.getHitVec().getY();
                 double z = lookingAt.getHitVec().getZ();
-                if(worldIn.getBlockState(new BlockPos(x,y,z)).getBlock() instanceof RedstoneReciver){
+                if(worldIn.getBlockState(new BlockPos(x,y,z)).getBlock() instanceof RedstoneReceiver){
                     nbtTagCompound.putBoolean("bound", true);
                     nbtTagCompound.putInt("x", (int)x);
                     nbtTagCompound.putInt("y", (int)y);
@@ -57,8 +57,8 @@ public class RedstoneRemote extends Item {
             int y = nbtTagCompound.getInt("y");
             int z = nbtTagCompound.getInt("z");
             worldIn.getBlockState(new BlockPos(x,y,z));
-            if(worldIn.getBlockState(new BlockPos(x,y,z)).getBlock() instanceof RedstoneReciver){
-                ((RedstoneReciver) worldIn.getBlockState(new BlockPos(x,y,z)).getBlock()).powerBlock(worldIn.getBlockState(new BlockPos(x,y,z)), worldIn, new BlockPos(x,y,z));
+            if(worldIn.getBlockState(new BlockPos(x,y,z)).getBlock() instanceof RedstoneReceiver){
+                ((RedstoneReceiver) worldIn.getBlockState(new BlockPos(x,y,z)).getBlock()).powerBlock(worldIn.getBlockState(new BlockPos(x,y,z)), worldIn, new BlockPos(x,y,z));
             } else {
                 itemStackIn.setTag(null);
             }

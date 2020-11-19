@@ -20,10 +20,10 @@ import net.minecraft.world.server.ServerWorld;
 import javax.annotation.Nullable;
 import java.util.Random;
 
-public class RedstoneReciver extends Block {
+public class RedstoneReceiver extends Block {
     public static final BooleanProperty POWERED = BlockStateProperties.POWERED;
 
-    public RedstoneReciver(){
+    public RedstoneReceiver(){
         super(AbstractBlock.Properties.create(Material.IRON));
         this.setDefaultState(this.stateContainer.getBaseState().with(POWERED, Boolean.valueOf(false)));
     }
