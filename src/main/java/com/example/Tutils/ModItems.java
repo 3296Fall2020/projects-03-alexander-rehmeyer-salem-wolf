@@ -30,4 +30,3 @@ public class ModItems {
     public static final RegistryObject<Item> AdvancedObserver = ITEMS.register("advanced_observer", () -> new BlockItem(ModBlocks.AdvancedObserver.get(), new Item.Properties().group(Tutils.TAB)));
     
 }
-
