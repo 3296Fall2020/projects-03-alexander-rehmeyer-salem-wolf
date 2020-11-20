@@ -1,0 +1,7 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {"tag": "tutils:uranium_ore"},
+  "result": {"item": "tutils:uranium_ingot"},
+  "experience": 2.3,
+  "cookingtime": 400
+}

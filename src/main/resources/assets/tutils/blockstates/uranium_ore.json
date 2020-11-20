@@ -1,6 +1,6 @@
 {
-  "variants":
-  {
-    "": { "model":  "tutils:block/uranium_ore" }
-  }
+    "variants":
+   {
+        "": { "model":  "tutils:block/uranium_ore" }
+   }
 }

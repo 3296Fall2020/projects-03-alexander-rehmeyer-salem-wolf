@@ -1,6 +1,15 @@
 {
-  "item.tutils.uranium_ingot": "Uranium Ingot",
-  "block.tutils.uranium_block": "Uranium Block",
-  "block.tutils.uranium_ore": "Uranium Ore",
-  "block.tutils.redstone_reciver": "Redstone Reciver"
+    "block.tutils.uranium_block": "Uranium Block",
+    "block.tutils.uranium_ore": "Uranium Ore",
+    "item.tutils.uranium_ingot": "Uranium Ingot",
+    "item.tutils.uranium_pickaxe": "Uranium Pickaxe",
+    "item.tutils.uranium_sword": "Uranium Sword",
+    "item.tutils.uranium_axe": "Uranium Axe",
+    "item.tutils.uranium_shovel": "Uranium Shovel",
+    "item.tutils.uranium_hoe": "Uranium Hoe",
+
+
+    "block.tutils.redstone_reciver": "Redstone Receiver",
+    "block.tutils.advanced_observer": "Advanced Observer",
+    "item.tutils.redstone_remote": "Redstone Remote"
 }

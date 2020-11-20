@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "II ",
+    "IS ",
+    " S "
+  ],
+  "key":
+  {
+    "I": {"item": "tutils:uranium_ingot"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "tutils:uranium_axe"},
+  "count": 1
+}
