@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " s ",
+    " P ",
+    " S "
+  ],
+  "key":
+  {
+    "s": {"item": "minecraft:gold_shovel"},
+    "P": {"item": "minecraft:gold_pickaxe"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "tutils:gold_shovel_pickaxe"},
+  "count": 1
+}

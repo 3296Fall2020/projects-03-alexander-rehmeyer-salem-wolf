@@ -1,0 +1,7 @@
+{
+    "parent": "item/handheld",
+    "textures":
+    {
+      "layer0": "tutils:item/diamond_axe_pickaxe"
+    }
+}
