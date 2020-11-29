@@ -2,6 +2,6 @@
     "parent": "item/handheld",
     "textures":
     {
-      "layer0": "tutils:item/gold_shovel_pickaxe"
+      "layer0": "tutils:item/diamond_shovel_pickaxe"
     }
 }
