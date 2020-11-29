@@ -2,15 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    "III",
-    " S ",
+    " s ",
+    " P ",
     " S "
   ],
   "key":
   {
-    "I": {"item": "tutils:uranium_ingot"},
+    "s": {"item": "minecraft:wooden_shovel"},
+    "P": {"item": "minecraft:wooden_pickaxe"},
     "S": {"item": "minecraft:stick"}
   },
-  "result": {"item": "tutils:uranium_pickaxe"},
+  "result": {"item": "tutils:wooden_shovel_pickaxe"},
   "count": 1
 }
