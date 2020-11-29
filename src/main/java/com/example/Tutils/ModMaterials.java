@@ -1,14 +1,22 @@
 package com.example.Tutils;
 
-import net.minecraft.item.IItemTier;
+import net.minecraft.block.Blocks;
+import net.minecraft.block.material.Material;
+import net.minecraft.item.*;
 import net.minecraft.item.Item;
 import net.minecraft.item.crafting.Ingredient;
+import net.minecraft.item.crafting.RepairItemRecipe;
 
 // Needed to create a new material to use in creating a custom tool
 public enum ModMaterials implements IItemTier
 {
-    // Establish the uranium material
-    uranium(10.0f, 9.0f, 30000, 3, 25, ModItems.uranium_ingot.get());
+    // Establish the materials for the custom tools in the mod
+    uranium(10.0f, 9.0f, 30000, 3, 25, ModItems.uranium_ingot.get()),
+    wood(4.0f, 2.0f, 59, 0, 15, Items.STICK),
+    stone(6.0f, 4.0f, 131, 1, 5, Items.COBBLESTONE),
+    iron(7.0f, 6.0f, 250, 2, 14, Items.IRON_INGOT),
+    gold(5.0f, 10.0f, 32, 2, 22, Items.GOLD_INGOT),
+    diamond(8.0f, 8.0f, 1561, 3, 10, Items.DIAMOND);
 
     // Stores the necessary statistics for a given custom material
     private float attackDamage, efficiency;
