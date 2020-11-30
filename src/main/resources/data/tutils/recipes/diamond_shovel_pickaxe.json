@@ -8,10 +8,10 @@
   ],
   "key":
   {
-    "s": {"item": "minecraft:gold_shovel"},
-    "P": {"item": "minecraft:gold_pickaxe"},
+    "s": {"item": "minecraft:diamond_shovel"},
+    "P": {"item": "minecraft:diamond_pickaxe"},
     "S": {"item": "minecraft:stick"}
   },
-  "result": {"item": "tutils:gold_shovel_pickaxe"},
+  "result": {"item": "tutils:diamond_shovel_pickaxe"},
   "count": 1
 }

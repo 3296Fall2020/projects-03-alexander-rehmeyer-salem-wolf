@@ -2,16 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "pattern":
   [
-    " s ",
+    " A ",
     " P ",
     " S "
   ],
   "key":
   {
-    "s": {"item": "minecraft:diamond_shovel"},
-    "P": {"item": "minecraft:diamond_pickaxe"},
+    "A": {"item": "minecraft:wooden_axe"},
+    "P": {"item": "minecraft:wooden_pickaxe"},
     "S": {"item": "minecraft:stick"}
   },
-  "result": {"item": "tutils:diamond_shovel_pickaxe"},
+  "result": {"item": "tutils:wooden_axe_pickaxe"},
   "count": 1
 }

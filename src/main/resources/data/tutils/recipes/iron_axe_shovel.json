@@ -8,10 +8,10 @@
   ],
   "key":
   {
-    "A": {"item": "minecraft:stone_axe"},
-    "s": {"item": "minecraft:stone_shovel"},
+    "A": {"item": "minecraft:iron_axe"},
+    "s": {"item": "minecraft:iron_shovel"},
     "S": {"item": "minecraft:stick"}
   },
-  "result": {"item": "tutils:stone_axe_shovel"},
+  "result": {"item": "tutils:iron_axe_shovel"},
   "count": 1
 }

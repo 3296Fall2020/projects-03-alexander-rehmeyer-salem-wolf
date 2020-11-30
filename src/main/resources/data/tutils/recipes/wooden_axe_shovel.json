@@ -3,15 +3,15 @@
   "pattern":
   [
     " A ",
-    " P ",
+    " s ",
     " S "
   ],
   "key":
   {
-    "A": {"item": "minecraft:diamond_axe"},
-    "P": {"item": "minecraft:diamond_pickaxe"},
+    "A": {"item": "minecraft:wooden_axe"},
+    "s": {"item": "minecraft:wooden_shovel"},
     "S": {"item": "minecraft:stick"}
   },
-  "result": {"item": "tutils:diamond_axe_pickaxe"},
+  "result": {"item": "tutils:wooden_axe_shovel"},
   "count": 1
 }

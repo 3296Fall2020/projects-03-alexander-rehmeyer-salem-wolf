@@ -8,10 +8,10 @@
   ],
   "key":
   {
-    "A": {"item": "minecraft:gold_axe"},
-    "P": {"item": "minecraft:gold_pickaxe"},
+    "A": {"item": "minecraft:diamond_axe"},
+    "P": {"item": "minecraft:diamond_pickaxe"},
     "S": {"item": "minecraft:stick"}
   },
-  "result": {"item": "tutils:gold_axe_pickaxe"},
+  "result": {"item": "tutils:diamond_axe_pickaxe"},
   "count": 1
 }
