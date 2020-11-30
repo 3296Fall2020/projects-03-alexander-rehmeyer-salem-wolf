@@ -16,6 +16,20 @@
     "item.tutils.diamond_shovel_pickaxe": "Diamond Povel",
     "item.tutils.uranium_shovel_pickaxe": "Uranium Povel",
 
+    "item.tutils.wooden_axe_pickaxe": "Wooden Pax",
+    "item.tutils.stone_axe_pickaxe": "Stone Pax",
+    "item.tutils.iron_axe_pickaxe": "Iron Pax",
+    "item.tutils.gold_axe_pickaxe": "Gold Pax",
+    "item.tutils.diamond_axe_pickaxe": "Diamond Pax",
+    "item.tutils.uranium_axe_pickaxe": "Uranium Pax",
+
+    "item.tutils.wooden_axe_shovel": "Wooden Saxel",
+    "item.tutils.stone_axe_shovel": "Stone Saxel",
+    "item.tutils.iron_axe_shovel": "Iron Saxel",
+    "item.tutils.gold_axe_shovel": "Gold Saxel",
+    "item.tutils.diamond_axe_shovel": "Diamond Saxel",
+    "item.tutils.uranium_axe_shovel": "Uranium Saxel",
+
     "block.tutils.redstone_reciver": "Redstone Receiver",
     "block.tutils.advanced_observer": "Advanced Observer",
     "item.tutils.redstone_remote": "Redstone Remote"
