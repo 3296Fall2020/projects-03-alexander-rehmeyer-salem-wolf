@@ -2,6 +2,6 @@
     "parent": "item/handheld",
     "textures":
     {
-      "layer0": "tutils:item/iron_axe_pickaxe"
+      "layer0": "tutils:item/gold_axe_pickaxe"
     }
 }

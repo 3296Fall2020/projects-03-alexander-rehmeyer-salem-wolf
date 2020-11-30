@@ -2,6 +2,6 @@
     "parent": "item/handheld",
     "textures":
     {
-      "layer0": "tutils:item/diamond_axe_pickaxe"
+      "layer0": "tutils:item/wooden_axe_shovel"
     }
 }
