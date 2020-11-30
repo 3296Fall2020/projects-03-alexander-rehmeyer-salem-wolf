@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " A ",
+    " P ",
+    " S "
+  ],
+  "key":
+  {
+    "A": {"item": "minecraft:stone_axe"},
+    "P": {"item": "minecraft:stone_pickaxe"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "tutils:stone_axe_pickaxe"},
+  "count": 1
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " s ",
+    " P ",
+    " S "
+  ],
+  "key":
+  {
+    "s": {"item": "tutils:uranium_shovel"},
+    "P": {"item": "tutils:uranium_pickaxe"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "tutils:uranium_shovel_pickaxe"},
+  "count": 1
+}
