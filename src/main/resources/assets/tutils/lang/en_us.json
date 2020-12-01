@@ -11,5 +11,7 @@
 
     "block.tutils.redstone_reciver": "Redstone Receiver",
     "block.tutils.advanced_observer": "Advanced Observer",
+    "block.tutils.hoer": "Redstone Plowing Machine",
+    "block.tutils.super_redstone_block": "Super Redstone Block",
     "item.tutils.redstone_remote": "Redstone Remote"
 }

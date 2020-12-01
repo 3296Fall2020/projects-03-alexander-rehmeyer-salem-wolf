@@ -4,8 +4,8 @@ import com.example.Tutils.Items.RedstoneRemote;
 import net.minecraft.item.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroup;
 import net.minecraftforge.fml.RegistryObject;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 
@@ -25,8 +25,7 @@ public class ModItems {
     // Block items
     public static final RegistryObject<Item> uranium_block = ITEMS.register("uranium_block", () -> new BlockItem(ModBlocks.uranium_block.get(), new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<Item> uranium_ore = ITEMS.register("uranium_ore", () -> new BlockItem(ModBlocks.uranium_ore.get(), new Item.Properties().group(Tutils.TAB)));
-
+    public static final RegistryObject<Item> Hoer = ITEMS.register("hoer", () -> new BlockItem(ModBlocks.Hoer.get(), new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<Item> RedstoneReciver = ITEMS.register("redstone_reciver", () -> new BlockItem(ModBlocks.RedstoneReceiver.get(), new Item.Properties().group(Tutils.TAB)));
     public static final RegistryObject<Item> AdvancedObserver = ITEMS.register("advanced_observer", () -> new BlockItem(ModBlocks.AdvancedObserver.get(), new Item.Properties().group(Tutils.TAB)));
-    
 }

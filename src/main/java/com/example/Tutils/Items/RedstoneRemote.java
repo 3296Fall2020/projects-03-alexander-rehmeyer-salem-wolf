@@ -39,9 +39,9 @@ public class RedstoneRemote extends Item {
                 double z = lookingAt.getHitVec().getZ();
                 if(worldIn.getBlockState(new BlockPos(x,y,z)).getBlock() instanceof RedstoneReceiver){
                     nbtTagCompound.putBoolean("bound", true);
-                    nbtTagCompound.putInt("x", (int)x);
-                    nbtTagCompound.putInt("y", (int)y);
-                    nbtTagCompound.putInt("z", (int)z);
+                    nbtTagCompound.putDouble("x", x);
+                    nbtTagCompound.putDouble("y", y);
+                    nbtTagCompound.putDouble("z", z);
                     playerIn.sendStatusMessage(new StringTextComponent(String.format("Bounding to the receiver at X:%d Y:%d Z:%d", (int)x, (int)y, (int)z)), true);
                 }
             }
@@ -53,9 +53,9 @@ public class RedstoneRemote extends Item {
             bound = nbtTagCompound.getBoolean("bound");
         }
         if (bound) {
-            int x = nbtTagCompound.getInt("x");
-            int y = nbtTagCompound.getInt("y");
-            int z = nbtTagCompound.getInt("z");
+            double x = nbtTagCompound.getDouble("x");
+            double y = nbtTagCompound.getDouble("y");
+            double z = nbtTagCompound.getDouble("z");
             worldIn.getBlockState(new BlockPos(x,y,z));
             if(worldIn.getBlockState(new BlockPos(x,y,z)).getBlock() instanceof RedstoneReceiver){
                 ((RedstoneReceiver) worldIn.getBlockState(new BlockPos(x,y,z)).getBlock()).powerBlock(worldIn.getBlockState(new BlockPos(x,y,z)), worldIn, new BlockPos(x,y,z));
