@@ -4,11 +4,13 @@ import com.example.Tutils.Structures.*;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableMap;
 
+import net.minecraft.data.BiomeProvider;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.world.gen.feature.NoFeatureConfig;
 import net.minecraft.world.gen.feature.structure.IStructurePieceType;
 import net.minecraft.world.gen.feature.structure.Structure;
+import net.minecraft.world.biome.provider.OverworldBiomeProvider;
 import net.minecraft.world.gen.settings.DimensionStructuresSettings;
 import net.minecraft.world.gen.settings.StructureSeparationSettings;
 import net.minecraftforge.event.RegistryEvent.Register;
@@ -47,6 +49,7 @@ public class TUStructures {
         //Structure.field_236365_a_.put(structure.getRegistryName().toString(), structure);
     	//List of vanilla structures
         Structure.NAME_STRUCTURE_BIMAP.put(structure.getRegistryName().toString(), structure);
+        
 
         /*
          * Will add land at the base of the structure like it does for Villages and Outposts.
