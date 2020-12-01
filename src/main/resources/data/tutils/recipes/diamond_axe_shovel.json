@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    " A ",
+    " s ",
+    " S "
+  ],
+  "key":
+  {
+    "A": {"item": "minecraft:diamond_axe"},
+    "s": {"item": "minecraft:diamond_shovel"},
+    "S": {"item": "minecraft:stick"}
+  },
+  "result": {"item": "tutils:diamond_axe_shovel"},
+  "count": 1
+}

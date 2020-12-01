@@ -2,12 +2,33 @@
     "block.tutils.uranium_block": "Uranium Block",
     "block.tutils.uranium_ore": "Uranium Ore",
     "item.tutils.uranium_ingot": "Uranium Ingot",
+
     "item.tutils.uranium_pickaxe": "Uranium Pickaxe",
     "item.tutils.uranium_sword": "Uranium Sword",
     "item.tutils.uranium_axe": "Uranium Axe",
     "item.tutils.uranium_shovel": "Uranium Shovel",
     "item.tutils.uranium_hoe": "Uranium Hoe",
 
+    "item.tutils.wooden_shovel_pickaxe": "Wooden Povel",
+    "item.tutils.stone_shovel_pickaxe": "Stone Povel",
+    "item.tutils.iron_shovel_pickaxe": "Iron Povel",
+    "item.tutils.gold_shovel_pickaxe": "Gold Povel",
+    "item.tutils.diamond_shovel_pickaxe": "Diamond Povel",
+    "item.tutils.uranium_shovel_pickaxe": "Uranium Povel",
+
+    "item.tutils.wooden_axe_pickaxe": "Wooden Pax",
+    "item.tutils.stone_axe_pickaxe": "Stone Pax",
+    "item.tutils.iron_axe_pickaxe": "Iron Pax",
+    "item.tutils.gold_axe_pickaxe": "Gold Pax",
+    "item.tutils.diamond_axe_pickaxe": "Diamond Pax",
+    "item.tutils.uranium_axe_pickaxe": "Uranium Pax",
+
+    "item.tutils.wooden_axe_shovel": "Wooden Saxel",
+    "item.tutils.stone_axe_shovel": "Stone Saxel",
+    "item.tutils.iron_axe_shovel": "Iron Saxel",
+    "item.tutils.gold_axe_shovel": "Gold Saxel",
+    "item.tutils.diamond_axe_shovel": "Diamond Saxel",
+    "item.tutils.uranium_axe_shovel": "Uranium Saxel",
 
     "block.tutils.redstone_reciver": "Redstone Receiver",
     "block.tutils.advanced_observer": "Advanced Observer",
