@@ -5,7 +5,10 @@ import com.example.Tutils.TUStructures;
 import com.google.common.collect.ImmutableMap;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.LootTables;
 import net.minecraft.nbt.CompoundNBT;
+import net.minecraft.tileentity.BarrelTileEntity;
 import net.minecraft.tileentity.ChestTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.Mirror;
@@ -27,6 +30,8 @@ import java.util.Random;
 public class Facility1Pieces {
 	
 	public static final ResourceLocation FAC_1 = new ResourceLocation(Tutils.MOD_ID, "facility_1");
+	public static final ResourceLocation FAC_1A = new ResourceLocation(Tutils.MOD_ID, "facility_1a");
+	private static final Map<ResourceLocation, BlockPos> OFFSET = ImmutableMap.of(FAC_1, new BlockPos(0, 1, 0), FAC_1A, new BlockPos(0, 1, 0));
 	
 	
     public static void start(TemplateManager templateManager, BlockPos pos, Rotation rotation, List<StructurePiece> pieceList, Random random) {
@@ -37,7 +42,11 @@ public class Facility1Pieces {
         BlockPos rotationOffSet = new BlockPos(0, 0, 0).rotate(rotation);
         BlockPos blockpos = rotationOffSet.add(x, pos.getY(), z);
         pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1, blockpos, rotation));
-
+        
+        
+        rotationOffSet = new BlockPos(-11, 0, 0).rotate(rotation);
+        blockpos = rotationOffSet.add(x, pos.getY(), z);
+        pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1A, blockpos, rotation));
 
     }
     
@@ -74,7 +83,20 @@ public class Facility1Pieces {
 		@Override
 		protected void handleDataMarker(String function, BlockPos pos, IServerWorld worldIn, Random rand,
 				MutableBoundingBox sbb) {
-			// TODO Auto-generated method stub
+			
+		  
+            if (function.contains("chest")) {
+            	
+                worldIn.setBlockState(pos, Blocks.CHEST.getDefaultState(), 2);
+                TileEntity tileentity = worldIn.getTileEntity(pos);
+
+                //check if there's a chest
+                if (tileentity instanceof ChestTileEntity) {
+                     ((ChestTileEntity) tileentity).setLootTable(LootTables.CHESTS_SPAWN_BONUS_CHEST, rand.nextLong());
+                }
+                
+                
+            }
 			
 		}
     }
