@@ -75,7 +75,7 @@ public class Facility1Structure extends Structure<NoFeatureConfig>
             // Turns the chunk coordinates into actual coordinates (Gets center of chunk)
             int x = (chunkX << 4) + 7;
             int z = (chunkZ << 4) + 7;
-            int surfaceY = chunkGenerator.getHeight(x, z, Heightmap.Type.WORLD_SURFACE_WG) - 1;
+            int surfaceY = chunkGenerator.getHeight(x, z, Heightmap.Type.WORLD_SURFACE_WG);
             BlockPos blockpos = new BlockPos(x, surfaceY, z);
           
 
@@ -89,7 +89,7 @@ public class Facility1Structure extends Structure<NoFeatureConfig>
             
 
             // Locate structure for debugging
-            Tutils.LOGGER.log(Level.DEBUG, "Facility_1 at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
+            //utils.LOGGER.log(Level.DEBUG, "Facility_1 at " + (blockpos.getX()) + " " + blockpos.getY() + " " + (blockpos.getZ()));
         }
 
     }
