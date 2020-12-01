@@ -1,0 +1,6 @@
+{
+    "parent": "block/advanced_observer",
+    "textures": {
+        "bottom": "tutils:block/advanced_observer_back_on"
+    }
+}

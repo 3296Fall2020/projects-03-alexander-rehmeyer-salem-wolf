@@ -1,6 +1,50 @@
 {
-  "variants":
-  {
-    "": { "model":  "tutils:block/advanced_observer" }
+  "variants": {
+    "facing=down,powered=false": {
+      "model": "tutils:block/advanced_observer",
+      "x": 90
+    },
+    "facing=down,powered=true": {
+      "model": "tutils:block/advanced_observer_on",
+      "x": 90
+    },
+    "facing=east,powered=false": {
+      "model": "tutils:block/advanced_observer",
+      "y": 90
+    },
+    "facing=east,powered=true": {
+      "model": "tutils:block/advanced_observer_on",
+      "y": 90
+    },
+    "facing=north,powered=false": {
+      "model": "tutils:block/advanced_observer"
+    },
+    "facing=north,powered=true": {
+      "model": "tutils:block/advanced_observer_on"
+    },
+    "facing=south,powered=false": {
+      "model": "tutils:block/advanced_observer",
+      "y": 180
+    },
+    "facing=south,powered=true": {
+      "model": "tutils:block/advanced_observer_on",
+      "y": 180
+    },
+    "facing=up,powered=false": {
+      "model": "tutils:block/advanced_observer",
+      "x": 270
+    },
+    "facing=up,powered=true": {
+      "model": "tutils:block/advanced_observer_on",
+      "x": 270
+    },
+    "facing=west,powered=false": {
+      "model": "tutils:block/advanced_observer",
+      "y": 270
+    },
+    "facing=west,powered=true": {
+      "model": "tutils:block/advanced_observer_on",
+      "y": 270
+    }
   }
 }
