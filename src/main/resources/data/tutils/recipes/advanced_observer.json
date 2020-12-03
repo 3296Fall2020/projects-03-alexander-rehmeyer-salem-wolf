@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##U",
+    "RRQ",
+    "##U"
+  ],
+  "key": {
+    "Q": {
+      "item": "minecraft:quartz"
+    },
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "#": {
+      "tag": "forge:cobblestone"
+    },
+    "U": {
+      "item": "tutils:uranium_ingot"
+    }
+  },
+  "result": {
+    "item": "tutils:advanced_observer"
+  }
+}

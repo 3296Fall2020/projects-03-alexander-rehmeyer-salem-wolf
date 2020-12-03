@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "RRR",
+    " s ",
+    "UUU"
+  ],
+  "key":
+  {
+    "R": {"item": "minecraft:redstone_block"},
+    "s": {"item": "tutils:diamond_shovel"},
+    "U": {"item": "tutils:uranium_ingot"}
+  },
+  "result": {"item": "tutils:hoer"}
+}

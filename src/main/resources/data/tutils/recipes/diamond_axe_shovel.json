@@ -8,8 +8,8 @@
   ],
   "key":
   {
-    "A": {"item": "minecraft:diamond_axe"},
-    "s": {"item": "minecraft:diamond_shovel"},
+    "C": {"item": "minecraft:cobblestone"},
+    "s": {"item": "tutils:diamond_shovel"},
     "S": {"item": "minecraft:stick"}
   },
   "result": {"item": "tutils:diamond_axe_shovel"},
