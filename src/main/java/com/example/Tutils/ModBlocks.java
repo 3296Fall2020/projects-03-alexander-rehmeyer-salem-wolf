@@ -23,4 +23,5 @@ public class ModBlocks {
     public static final RegistryObject<Block> uranium_ore = BLOCKS.register("uranium_ore",
             () -> new Block(Block.Properties.create(Material.ROCK).hardnessAndResistance(2.0f, 3.0f).sound(SoundType.STONE)));
 
+
 }

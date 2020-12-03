@@ -4,7 +4,9 @@ import com.example.Tutils.Tutils;
 import com.example.Tutils.TUStructures;
 import com.google.common.collect.ImmutableMap;
 
+import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
+import net.minecraft.command.arguments.BlockStateArgument;
 import net.minecraft.loot.LootTable;
 import net.minecraft.loot.LootTables;
 import net.minecraft.nbt.CompoundNBT;
@@ -27,10 +29,14 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
+import javax.swing.text.html.parser.Entity;
+
 public class Facility1Pieces {
 	
 	public static final ResourceLocation FAC_1 = new ResourceLocation(Tutils.MOD_ID, "facility_1");
 	public static final ResourceLocation FAC_1A = new ResourceLocation(Tutils.MOD_ID, "facility_1a");
+	public static final ResourceLocation FAC_1B = new ResourceLocation(Tutils.MOD_ID, "facility_1b");
+	
 	private static final Map<ResourceLocation, BlockPos> OFFSET = ImmutableMap.of(FAC_1, new BlockPos(0, 1, 0), FAC_1A, new BlockPos(0, 1, 0));
 	
 	
@@ -44,9 +50,25 @@ public class Facility1Pieces {
         pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1, blockpos, rotation));
         
         
-        rotationOffSet = new BlockPos(-11, 0, 0).rotate(rotation);
-        blockpos = rotationOffSet.add(x, pos.getY(), z);
-        pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1A, blockpos, rotation));
+        int randy = random.nextInt(2);
+        
+        if(randy == 1)
+        {
+        	rotationOffSet = new BlockPos(-11, 0, 0).rotate(rotation);
+        	blockpos = rotationOffSet.add(x, pos.getY(), z);
+        	pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1A, blockpos, rotation));
+        }
+        
+        randy = random.nextInt(2);
+        
+        if(randy == 1)
+        {
+        	rotationOffSet = new BlockPos(2, 0, 11).rotate(rotation);
+        	blockpos = rotationOffSet.add(x, pos.getY(), z);
+        	pieceList.add(new Facility1Pieces.Piece(templateManager, FAC_1B, blockpos, rotation));
+        }
+        
+        
 
     }
     
@@ -85,17 +107,33 @@ public class Facility1Pieces {
 				MutableBoundingBox sbb) {
 			
 		  
-            if (function.contains("chest")) {
+            if (function.contains("chest")) 
+            {
             	
-                worldIn.setBlockState(pos, Blocks.CHEST.getDefaultState(), 2);
-                TileEntity tileentity = worldIn.getTileEntity(pos);
+                
+                TileEntity tileentity = worldIn.getTileEntity(new BlockPos(pos.getX(), pos.getY()-1, pos.getZ()));
 
                 //check if there's a chest
                 if (tileentity instanceof ChestTileEntity) {
-                     ((ChestTileEntity) tileentity).setLootTable(LootTables.CHESTS_SPAWN_BONUS_CHEST, rand.nextLong());
+                     ((ChestTileEntity) tileentity).setLootTable(LootTables.CHESTS_SIMPLE_DUNGEON, rand.nextLong());
                 }
                 
+                worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 1);
                 
+            }
+            
+            if(function.contains("random"))
+            {
+            	
+            	int randy = rand.nextInt(100);
+            	
+                if(randy >= 90)
+                	worldIn.setBlockState(pos, Blocks.DIAMOND_BLOCK.getDefaultState(), 1);
+                else if(randy < 90 && randy >= 70)
+                	worldIn.setBlockState(pos, Blocks.GOLD_BLOCK.getDefaultState(), 1);
+                else
+                	worldIn.setBlockState(pos, Blocks.IRON_BLOCK.getDefaultState(), 1);
+                	
             }
 			
 		}
