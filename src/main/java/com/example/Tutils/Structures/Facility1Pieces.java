@@ -115,7 +115,8 @@ public class Facility1Pieces {
 
                 //check if there's a chest
                 if (tileentity instanceof ChestTileEntity) {
-                     ((ChestTileEntity) tileentity).setLootTable(LootTables.CHESTS_SIMPLE_DUNGEON, rand.nextLong());
+                     ((ChestTileEntity) tileentity).setLootTable(new ResourceLocation(Tutils.MOD_ID, "facility1_loot")
+                    		 , rand.nextLong());
                 }
                 
                 worldIn.setBlockState(pos, Blocks.AIR.getDefaultState(), 1);
@@ -127,9 +128,9 @@ public class Facility1Pieces {
             	
             	int randy = rand.nextInt(100);
             	
-                if(randy >= 90)
+                if(randy >= 70)
                 	worldIn.setBlockState(pos, Blocks.DIAMOND_BLOCK.getDefaultState(), 1);
-                else if(randy < 90 && randy >= 70)
+                else if(randy < 70 && randy >= 40)
                 	worldIn.setBlockState(pos, Blocks.GOLD_BLOCK.getDefaultState(), 1);
                 else
                 	worldIn.setBlockState(pos, Blocks.IRON_BLOCK.getDefaultState(), 1);

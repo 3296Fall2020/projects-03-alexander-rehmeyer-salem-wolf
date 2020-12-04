@@ -80,6 +80,7 @@ public class TUStructures {
     public static void registerAllPieces() {
         registerStructurePiece(F1, new ResourceLocation(Tutils.MOD_ID, "facility_1"));
     }
+    
 
 
     static void registerStructurePiece(IStructurePieceType structurePiece, ResourceLocation rl) {
